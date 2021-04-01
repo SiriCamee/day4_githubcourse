@@ -24,6 +24,13 @@ def count_word_occurrence_in_string(text, word):
     words = text.split()
     return words.count(word)
 
+def test_count_word_occurrence_in_string():
+    text_test='Things are going well'
+    word_test_1='well'
+    word_test_2='twice'
+    assert count_word_occurrence_in_string(text_test,word_test_1) == 1
+    assert count_word_occurrence_in_string(text_test,word_test_2) == 0
+    
 
 # 3
 def count_word_occurrence_in_file(file_name, word):
