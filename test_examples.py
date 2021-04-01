@@ -12,7 +12,7 @@ def factorial(n):
 
 def test_factorial():
     assert factorial(1) == 1
-
+    assert factorial(5) == 120
 
 # 2
 def count_word_occurrence_in_string(text, word):
