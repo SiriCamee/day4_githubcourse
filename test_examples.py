@@ -77,8 +77,10 @@ class Pet:
         self.hunger += 1
 
 def test_go_for_a_walk():
-    assert go_for_a_walk('carl') == 0
-    assert go_for_a_walk('anna') == 1
+    pet_test = Pet('anna')
+    pet_test.go_for_a_walk()
+    assert pet_test.hunger == 0
+    assert pet_test.hunger == 1
 
         
 
