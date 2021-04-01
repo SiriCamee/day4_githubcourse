@@ -79,8 +79,9 @@ class Pet:
 def test_go_for_a_walk():
     pet_test = Pet('anna')
     pet_test.go_for_a_walk()
-    assert pet_test.hunger() == 0
     assert pet_test.hunger() == 1
+    pet_test.go_for_a_walk()
+    assert pet_test.hunger() == 2
 
         
 
