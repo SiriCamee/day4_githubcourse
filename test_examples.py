@@ -10,6 +10,9 @@ def factorial(n):
         result *= i
     return result
 
+def test_factorial():
+    assert factorial(1) == 1
+
 
 # 2
 def count_word_occurrence_in_string(text, word):
