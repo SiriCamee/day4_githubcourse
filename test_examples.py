@@ -75,5 +75,10 @@ class Pet:
         self.hunger = 0
     def go_for_a_walk(self):  # <-- how would you test this function?
         self.hunger += 1
+
+def test_go_for_a_walk():
+    assert go_for_a_walk('carl') == 0
+    assert go_for_a_walk('anna') == 1
+
         
 
