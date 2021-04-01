@@ -63,6 +63,10 @@ def check_reactor_temperature(temperature_celsius):
         status = 0
     return status
 
+def test_check_reactor_temperature():
+    assert check_reactor_temperature(100) == 0
+    assert check_reactor_temperature(300) == 1
+
 
 # 5
 class Pet:
