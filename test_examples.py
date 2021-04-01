@@ -46,6 +46,9 @@ def count_word_occurrence_in_file(file_name, word):
             count += words.count(word)
     return count
 
+def test_count_word_occurrence_in_file():
+    assert count_word_occurrence_in_file('check.txt','well') == 1
+    assert count_word_occurrence_in_file('check.txt','twice') == 0
 
 # 4
 def check_reactor_temperature(temperature_celsius):
